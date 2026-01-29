@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Product Details</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="product-page">
+
+  <!-- LEFT: Images -->
+  <div class="product-images">
+    <img src="images/ring1.jpg" class="main-img">
+  </div>
+
+  <!-- RIGHT: Details -->
+  <div class="product-details">
+    <h2>Limitless Spark - Lab Diamond Necklace</h2>
+
+    <p class="price">
+      ₹8,499 <span class="old-price">₹10,624</span>
+      <span class="offer">20% OFF</span>
+    </p>
+
+    <p class="desc">
+      18kt Gold Vermeil Plating on 925 Sterling Silver
+    </p>
+
+    <div class="icons">
+      <div>🔁 Easy 7 Day Return</div>
+      <div>💍 Lifetime Plating</div>
+      <div>💰 Lifetime Buyback</div>
+      <div>🛡 SGL Certified</div>
+    </div>
+
+    <div class="action-buttons">
+      <button class="add-cart" onclick="addToCart()">ADD TO CART</button>
+      <button class="buy-now" onclick="window.location.href='checkout.html'">
+        BUY NOW
+      </button>
+    </div>
+
+  </div>
+
+</div>
+
+<script>
+let count = 0;
+function addToCart() {
+  count++;
+  alert("Item added to cart!");
+}
+</script>
+
+</body>
+</html>

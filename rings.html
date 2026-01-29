@@ -1,0 +1,51 @@
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<title>Rings Collection</title>
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<h1>Rings Collection</h1>
+<div class="products">
+<div class="card">
+<a href="product.html"></a>
+<img src="images/ring1.jpg" />
+<h3>Ring</h3>
+<p>₹45,000</p>
+</div>
+<div class="card">
+<a href="product.html"></a>   
+<img src="images/ring2.jpg" />
+<h3>Ring</h3>
+<p>₹30,000</p>
+</div>
+
+<div class="card">
+<img src="images/ring3.webp" />
+<h3>Ring</h3>
+<p>₹20,000</p>
+</div>
+<div class="card">
+<img src="images/ring4.webp" />
+<h3>Ring</h3>
+<p>₹35,000</p>
+</div>
+<div class="card">
+<img src="images/ring5.webp" />
+<h3>Ring</h3>
+<p>₹25,000</p>
+</div>
+</div>
+<script>
+  let count = 0;
+
+  function addToCart() {
+    count++;
+    document.getElementById("cart-count").textContent = count;
+  }
+</script>
+<div class="action-buttons">
+    <button class="add-cart" onclick="addToCart()">ADD TO CART</button>
+    <button class="buy-now">BUY NOW</button>
+</body>
+</html>

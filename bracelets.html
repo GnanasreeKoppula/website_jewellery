@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<title>Bracelets Collection</title>
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<h1>Bracelets</h1>
+<div class="products">
+<div class="card">
+<img src="images/bracelet1.jpg" />
+<h3>Bracelet</h3>
+<p>₹25,000</p>
+</div>
+<div class="card">
+<img src="images/bracelet2.jpg" />
+<h3>Bracelet</h3>
+<p>₹55,000</p>
+</div>
+<div class="card">
+<img src="images/bracelet3.png" />
+<h3>Bracelet</h3>
+<p>₹45,000</p>
+</div>
+<div class="card">
+<img src="images/bracelet4.webp" />
+<h3>Bracelet</h3>
+<p>₹30,000</p>
+</div>
+<div class="card">
+<img src="images/bracelet5.webp" />
+<h3>Bracelet</h3>
+<p>₹50,000</p>
+</div>
+</div>
+<script>
+  let count = 0;
+
+  function addToCart() {
+    count++;
+    document.getElementById("cart-count").textContent = count;
+  }
+</script>
+<div class="action-buttons">
+    <button class="add-cart" onclick="addToCart()">ADD TO CART</button>
+    <button class="buy-now">BUY NOW</button>
+</body>
+</html>

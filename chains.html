@@ -1,0 +1,48 @@
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<title>Chains Collection</title>
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<h1>Chains Collection</h1>
+<div class="products">
+<div class="card">
+<img src="images/chain1.jpg" />
+<h3>Chain</h3>
+<p>₹60,000</p>
+</div>
+<div class="card">
+<img src="images/chain2.jpg" />
+<h3>Chain</h3>
+<p>₹80,000</p>
+</div>
+<div class="card">
+<img src="images/chain3.webp" />
+<h3>Chain</h3>
+<p>₹70,000</p>
+</div>
+<div class="card">
+<img src="images/chain4.webp" />
+<h3>Chain</h3>
+<p>₹50,000</p>
+</div>
+<div class="card">
+<img src="images/chain5.webp" />
+<h3>Chain</h3>
+<p>₹55,000</p>
+</div>
+</div>
+<script>
+  let count = 0;
+
+  function addToCart() {
+    count++;
+    document.getElementById("cart-count").textContent = count;
+  }
+</script>
+<div class="action-buttons">
+    <button class="add-cart" onclick="addToCart()">ADD TO CART</button>
+    <button class="buy-now">BUY NOW</button>
+</body>
+</html>
